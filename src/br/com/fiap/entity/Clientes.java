@@ -31,7 +31,7 @@ public class Clientes implements Serializable{
 	@Column(name = "Email", length = 45)
 	private String email;
 	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "idCliente")
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "idCliente")
 	private List<Pedidos> pedidos;
 	
 	
