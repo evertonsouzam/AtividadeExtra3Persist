@@ -80,7 +80,7 @@ public class Pedidos implements Serializable{
 
 		@Override
 		public String toString() {
-			return "Pedidos [idPedido=" + idPedido + ", idCliente=" + idCliente + ", data=" + data + ", descricao="
+			return "Pedidos [idPedido=" + idPedido + ", data=" + data + ", descricao="
 					+ descricao + ", valor=" + valor + "]";
 		}
 

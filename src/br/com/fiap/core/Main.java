@@ -39,7 +39,9 @@ public class Main {
 		GenericDao<Clientes> dao = new GenericDao<>(Clientes.class);
 		try{
 			dao.adicionar(cliente);
-			dao.buscar(11).toString();
+			Clientes clienteRetorno = dao.buscar(11);
+			dao.buscar(1).toString();
+			System.out.println(clienteRetorno.toString());
 			dao.listar().forEach(System.out::println);;
 	
 		}catch (Exception e) {
